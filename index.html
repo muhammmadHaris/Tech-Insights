@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Insights | Blog Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="#">TechInsights</a>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#posts" class="nav-link">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a href="#categories" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item search-item">
+              <div class="search-box">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="search-input"
+                />
+                <button class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero / Featured Post Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="featured-post">
+          <div class="featured-image">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
+              alt="Featured Post"
+            />
+          </div>
+          <div class="featured-content">
+            <span class="post-category">Technology</span>
+            <h1 class="post-title">The Future of Web Development in 2023</h1>
+            <p class="post-excerpt">
+              Explore the latest trends and technologies that are shaping the
+              future of web development and how they will impact developers and
+              businesses alike.
+            </p>
+            <a href="#" class="read-more-btn"
+              >Read More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-container">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <!-- Categories Widget -->
+        <div class="widget categories-widget" id="categories">
+          <h3 class="widget-title">Categories</h3>
+          <ul class="categories-list">
+            <li>
+              <a href="#" data-category="technology"
+                >Technology <span>(12)</span></a
+              >
+            </li>
+            <li>
+              <a href="#" data-category="design">Design <span>(8)</span></a>
+            </li>
+            <li>
+              <a href="#" data-category="development"
+                >Development <span>(15)</span></a
+              >
+            </li>
+            <li>
+              <a href="#" data-category="business">Business <span>(7)</span></a>
+            </li>
+            <li>
+              <a href="#" data-category="startup">Startup <span>(5)</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Recent Posts Widget -->
+        <div class="widget recent-posts-widget">
+          <h3 class="widget-title">Recent Posts</h3>
+          <div class="recent-post">
+            <div class="recent-post-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Recent Post"
+              />
+            </div>
+            <div class="recent-post-content">
+              <h4><a href="#">Understanding JavaScript Closures</a></h4>
+              <span class="recent-post-date">June 15, 2023</span>
+            </div>
+          </div>
+          <div class="recent-post">
+            <div class="recent-post-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+                alt="Recent Post"
+              />
+            </div>
+            <div class="recent-post-content">
+              <h4><a href="#">UI/UX Trends for Modern Applications</a></h4>
+              <span class="recent-post-date">June 12, 2023</span>
+            </div>
+          </div>
+          <div class="recent-post">
+            <div class="recent-post-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                alt="Recent Post"
+              />
+            </div>
+            <div class="recent-post-content">
+              <h4><a href="#">Responsive Design Best Practices</a></h4>
+              <span class="recent-post-date">June 10, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Widget -->
+        <div class="widget search-widget">
+          <h3 class="widget-title">Search</h3>
+          <div class="search-form">
+            <input type="text" placeholder="Search articles..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <!-- Social Media Widget -->
+        <div class="widget social-widget">
+          <h3 class="widget-title">Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </aside>
+      <!-- Blog Post Grid Section -->
+      <section class="blog-posts" id="posts">
+        <h2 class="section-title">Latest Articles</h2>
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="technology">
+            Technology
+          </button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="development">
+            Development
+          </button>
+        </div>
+        <div class="posts-grid">
+          <!-- Post 1 -->
+          <article class="post-card" data-category="technology">
+            <div class="post-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Post Thumbnail"
+              />
+            </div>
+            <div class="post-content">
+              <span class="post-date">June 15, 2023</span>
+              <h3 class="post-title">Understanding JavaScript Closures</h3>
+              <p class="post-excerpt">
+                Closures are a fundamental concept in JavaScript that every
+                developer should understand. Learn how they work and when to use
+                them.
+              </p>
+              <a href="#" class="read-more-link"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="post-card" data-category="design">
+            <div class="post-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+                alt="Post Thumbnail"
+              />
+            </div>
+            <div class="post-content">
+              <span class="post-date">June 12, 2023</span>
+              <h3 class="post-title">UI/UX Trends for Modern Applications</h3>
+              <p class="post-excerpt">
+                Discover the latest UI/UX design trends that are creating more
+                engaging and user-friendly digital experiences.
+              </p>
+              <a href="#" class="read-more-link"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="post-card" data-category="development">
+            <div class="post-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                alt="Post Thumbnail"
+              />
+            </div>
+            <div class="post-content">
+              <span class="post-date">June 10, 2023</span>
+              <h3 class="post-title">Responsive Design Best Practices</h3>
+              <p class="post-excerpt">
+                Learn the essential techniques and strategies for creating
+                websites that look great on all devices and screen sizes.
+              </p>
+              <a href="#" class="read-more-link"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Post 4 -->
+          <article class="post-card" data-category="technology">
+            <div class="post-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1120&q=80"
+                alt="Post Thumbnail"
+              />
+            </div>
+            <div class="post-content">
+              <span class="post-date">June 8, 2023</span>
+              <h3 class="post-title">
+                Introduction to Machine Learning Algorithms
+              </h3>
+              <p class="post-excerpt">
+                A beginner's guide to understanding the fundamental machine
+                learning algorithms and their practical applications.
+              </p>
+              <a href="#" class="read-more-link"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Post 5 -->
+          <article class="post-card" data-category="design">
+            <div class="post-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                alt="Post Thumbnail"
+              />
+            </div>
+            <div class="post-content">
+              <span class="post-date">June 5, 2023</span>
+              <h3 class="post-title">Color Theory for Web Designers</h3>
+              <p class="post-excerpt">
+                How to choose the right color schemes for your websites to
+                create visually appealing and effective designs.
+              </p>
+              <a href="#" class="read-more-link"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Post 6 -->
+          <article class="post-card" data-category="development">
+            <div class="post-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Post Thumbnail"
+              />
+            </div>
+            <div class="post-content">
+              <span class="post-date">June 2, 2023</span>
+              <h3 class="post-title">Optimizing Website Performance</h3>
+              <p class="post-excerpt">
+                Practical tips and techniques to make your website load faster
+                and provide a better user experience.
+              </p>
+              <a href="#" class="read-more-link"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>TechInsights</h3>
+            <p>
+              Providing the latest insights on technology, design, and
+              development to help you stay ahead in the digital world.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Startup</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Subscribe</h3>
+            <p>Subscribe to our newsletter to get the latest updates.</p>
+            <form class="subscribe-form">
+              <input type="email" placeholder="Your Email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechInsights. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
